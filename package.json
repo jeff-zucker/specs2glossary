@@ -1,0 +1,20 @@
+{
+  "name": "specs2gloss",
+  "version": "1.0.0",
+  "description": "Gather & display terms from the Solid specifications",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node specs2glossary > tech-glossary.html"
+  },
+  "keywords": [
+    "Solid",
+    "Terminology",
+    "Glossary"
+  ],
+  "author": "Jeff Zucker",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^19.0.0",
+    "rdflib": "^2.2.19"
+  }
+}
