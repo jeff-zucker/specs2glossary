@@ -11,78 +11,177 @@
 
     <p typeof="schema:description">
         Generated from the specfications using 
-        <a rel="prov:wasDerivedFrom" href="https://github.com/jeff-zucker/specs2glossary/">
-            https://github.com/jeff-zucker/specs2glossary/
+        <a rel="prov:wasDerivedFrom" href="https://github.com/jeff-zucker/specs2glossary">
+            https://github.com/jeff-zucker/specs2gloss
         </a>
     </p>
-
  
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">agent group</div>
-      <div property="skos:definition">An agent group is a group of persons or entities identified by a URI.</div>
-      <a href="https://solidproject.org/TR/wac#agent-group" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#agent-group</a>
+      <div property="skos:prefLabel">data pod</div>
+      <div property="skos:definition">A data pod is a place for storing documents, with mechanisms for controlling who can access what.</div>
+      <a href="https://solidproject.org/TR/protocol#data-pod" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#data-pod</a>
     </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">agent class</div>
-      <div property="skos:definition">An agent class is a class of persons or entities identified by a URI.</div>
-      <a href="https://solidproject.org/TR/wac#agent-class" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#agent-class</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">URI</div>
-      <div property="skos:definition">A Uniform Resource Identifier (URI) provides the means for identifying resources [RFC3986].</div>
-      <a href="https://solidproject.org/TR/protocol#uniform-resource-identifier" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#uniform-resource-identifier</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">origin</div>
-      <div property="skos:definition">An origin indicates where an HTTP request originates from [RFC6454].</div>
-      <a href="https://solidproject.org/TR/wac#origin" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#origin</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">container resource</div>
-      <div property="skos:definition">A container resource is a hierarchical collection of resources that contains other resources, including containers.</div>
-      <a href="https://solidproject.org/TR/wac#container-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#container-resource</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">accept</div>
-      <div property="skos:definition">A MIME-Type value that indicates the desired serialization of the notification. For instance, text/turtle may be acceptable.</div>
-      <a href="https://solidproject.org/TR/notifications-protocol#feature-accept" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#feature-accept</a>
-    </div>
-  
+
     <div typeof="skos:Concept">
       <div property="skos:prefLabel">Solid app</div>
       <div property="skos:definition">A Solid app is an application that reads or writes data from one or more storages.</div>
       <a href="https://solidproject.org/TR/protocol#solid-app" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#solid-app</a>
     </div>
-  
+
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">access mode</div>
-      <div property="skos:definition">An access mode is a class of operations that can be performed on one or more resources.</div>
-      <a href="https://solidproject.org/TR/wac#access-mode" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#access-mode</a>
+      <div property="skos:prefLabel">URI</div>
+      <div property="skos:definition">A Uniform Resource Identifier (URI) provides the means for identifying resources [RFC3986].</div>
+      <a href="https://solidproject.org/TR/protocol#uniform-resource-identifier" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#uniform-resource-identifier</a>
     </div>
-  
+
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">expiration</div>
-      <div property="skos:definition">An ISO 8601 datetime value indicating a proposed expiration point for a subscription. A server may choose another value.</div>
-      <a href="https://solidproject.org/TR/notifications-protocol#feature-expiration" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#feature-expiration</a>
+      <div property="skos:prefLabel">resource</div>
+      <div property="skos:definition">A resource is the target of an HTTP request identified by a URI [RFC7231].</div>
+      <a href="https://solidproject.org/TR/protocol#resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#resource</a>
     </div>
-  
+
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">source</div>
-      <div property="skos:definition">The source property is used in the body of the subscription response. The value of this property MUST be a URI, using the wss scheme. A JavaScript client would use the entire value as input to the WebSocket constructor.</div>
-      <a href="https://solidproject.org/TR/websocket-subscription-2021#websocketsubscription2021-source" rel="prov:wasDerivedFrom">https://solidproject.org/TR/websocket-subscription-2021#websocketsubscription2021-source</a>
+      <div property="skos:prefLabel">container resource</div>
+      <div property="skos:definition">A container resource is a hierarchical collection of resources that contains other resources, including containers.</div>
+      <a href="https://solidproject.org/TR/protocol#container-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#container-resource</a>
     </div>
-  
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">root container</div>
+      <div property="skos:definition">A root container is a container resource that is at the highest level of the collection hierarchy.</div>
+      <a href="https://solidproject.org/TR/protocol#root-container" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#root-container</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">resource metadata</div>
+      <div property="skos:definition">Resource metadata encompasses data about resources described by means of RDF statements [RDF11-CONCEPTS].</div>
+      <a href="https://solidproject.org/TR/protocol#resource-metadata" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#resource-metadata</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">agent</div>
+      <div property="skos:definition">An agent is a person, social entity, or software identified by a URI; e.g., a WebID denotes an agent [WEBID].</div>
+      <a href="https://solidproject.org/TR/protocol#agent" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#agent</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">owner</div>
+      <div property="skos:definition">An owner is a person or a social entity that is considered to have the rights and responsibilities of a data storage. An owner is identified by a URI, and implicitly has control over all data in a storage. An owner is first set at storage provisioning time and can be changed.</div>
+      <a href="https://solidproject.org/TR/protocol#owner" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#owner</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">origin</div>
+      <div property="skos:definition">An origin indicates where an HTTP request originates from [RFC6454].</div>
+      <a href="https://solidproject.org/TR/protocol#origin" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#origin</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">read operation</div>
+      <div property="skos:definition">A read operation entails that information about a resource’s existence or its description can be known. [Source]</div>
+      <a href="https://solidproject.org/TR/protocol#read-operation" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#read-operation</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">write operation</div>
+      <div property="skos:definition">A write operation entails that information about resources can be created or removed. [Source]</div>
+      <a href="https://solidproject.org/TR/protocol#write-operation" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#write-operation</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">append operation</div>
+      <div property="skos:definition">An append operation entails that information can be added but not removed. [Source]</div>
+      <a href="https://solidproject.org/TR/protocol#append-operation" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#append-operation</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">URI</div>
+      <div property="skos:definition">A Uniform Resource Identifier (URI) provides the means for identifying resources [RFC3986].</div>
+      <a href="https://solidproject.org/TR/wac#uri" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#uri</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">resource</div>
+      <div property="skos:definition">A resource is the target of an HTTP request identified by a URI [RFC7231].</div>
+      <a href="https://solidproject.org/TR/wac#resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#resource</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">container resource</div>
+      <div property="skos:definition">A container resource is a hierarchical collection of resources that contains other resources, including containers.</div>
+      <a href="https://solidproject.org/TR/wac#container-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#container-resource</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">root container</div>
+      <div property="skos:definition">A root container is a container resource that is at the highest level of the collection hierarchy.</div>
+      <a href="https://solidproject.org/TR/wac#root-container" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#root-container</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">ACL resource</div>
+      <div property="skos:definition">An ACL resource is represented by an RDF document [RDF11-CONCEPTS] that includes Authorizations determining access to resources.</div>
+      <a href="https://solidproject.org/TR/wac#acl-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#acl-resource</a>
+    </div>
+
     <div typeof="skos:Concept">
       <div property="skos:prefLabel">Authorization</div>
       <div property="skos:definition">An Authorization is an abstract thing which is identified by a URI and whose properties are defined in an ACL resource, e.g., access modes granted to agents the ability to perform operations on resources.</div>
       <a href="https://solidproject.org/TR/wac#authorization" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#authorization</a>
     </div>
-  
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">access mode</div>
+      <div property="skos:definition">An access mode is a class of operations that can be performed on one or more resources.</div>
+      <a href="https://solidproject.org/TR/wac#access-mode" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#access-mode</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">agent</div>
+      <div property="skos:definition">An agent is a person, social entity or software identified by a URI, e.g., a WebID denotes an agent [WEBID].</div>
+      <a href="https://solidproject.org/TR/wac#agent" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#agent</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">agent group</div>
+      <div property="skos:definition">An agent group is a group of persons or entities identified by a URI.</div>
+      <a href="https://solidproject.org/TR/wac#agent-group" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#agent-group</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">agent class</div>
+      <div property="skos:definition">An agent class is a class of persons or entities identified by a URI.</div>
+      <a href="https://solidproject.org/TR/wac#agent-class" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#agent-class</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">origin</div>
+      <div property="skos:definition">An origin indicates where an HTTP request originates from [RFC6454].</div>
+      <a href="https://solidproject.org/TR/wac#origin" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#origin</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">
+                      Notification Subscription API
+                    </div>
+      <div property="skos:definition">
+                      An HTTP URI at which a client can initiate a subscription to notification events
+                      for a particular set of resources [RFC7231].
+                    </div>
+      <a href="https://solidproject.org/TR/notifications-protocol#notification-subscription-api" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#notification-subscription-api</a>
+    </div>
+
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">
+                      Notification Subscription Metadata Resource
+                    </div>
+      <div property="skos:definition">
+                      An RDF document [RDF11-CONCEPTS]
+                      that includes metadata about the capabilities of a Notification Subscription API.
+                    </div>
+      <a href="https://solidproject.org/TR/notifications-protocol#notification-subscription-metadata-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#notification-subscription-metadata-resource</a>
+    </div>
+
     <div typeof="skos:Concept">
       <div property="skos:prefLabel">
                       @context
@@ -98,137 +197,37 @@
                     </div>
       <a href="https://solidproject.org/TR/notifications-protocol#server-subscription-request-context" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#server-subscription-request-context</a>
     </div>
-  
+
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">resource metadata</div>
-      <div property="skos:definition">Resource metadata encompasses data about resources described by means of RDF statements [RDF11-CONCEPTS].</div>
-      <a href="https://solidproject.org/TR/protocol#resource-metadata" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#resource-metadata</a>
+      <div property="skos:prefLabel">expiration</div>
+      <div property="skos:definition">An ISO 8601 datetime value indicating a proposed expiration point for a subscription. A server may choose another value.</div>
+      <a href="https://solidproject.org/TR/notifications-protocol#feature-expiration" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#feature-expiration</a>
     </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">root container</div>
-      <div property="skos:definition">A root container is a container resource that is at the highest level of the collection hierarchy.</div>
-      <a href="https://solidproject.org/TR/wac#root-container" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#root-container</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">root container</div>
-      <div property="skos:definition">A root container is a container resource that is at the highest level of the collection hierarchy.</div>
-      <a href="https://solidproject.org/TR/protocol#root-container" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#root-container</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">read operation</div>
-      <div property="skos:definition">A read operation entails that information about a resource’s existence or its description can be known. [Source]</div>
-      <a href="https://solidproject.org/TR/protocol#read-operation" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#read-operation</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">append operation</div>
-      <div property="skos:definition">An append operation entails that information can be added but not removed. [Source]</div>
-      <a href="https://solidproject.org/TR/protocol#append-operation" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#append-operation</a>
-    </div>
-  
+
     <div typeof="skos:Concept">
       <div property="skos:prefLabel">state</div>
       <div property="skos:definition">An opaque value representing the last known state of a resource. If the resource state is known to have changed when the client establishes a subscription, an initial notification must be sent to the client. This value should correspond to a resource's ETag header value.</div>
       <a href="https://solidproject.org/TR/notifications-protocol#feature-state" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#feature-state</a>
     </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">resource</div>
-      <div property="skos:definition">A resource is the target of an HTTP request identified by a URI [RFC7231].</div>
-      <a href="https://solidproject.org/TR/protocol#resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#resource</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">URI</div>
-      <div property="skos:definition">A Uniform Resource Identifier (URI) provides the means for identifying resources [RFC3986].</div>
-      <a href="https://solidproject.org/TR/wac#uri" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#uri</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">write operation</div>
-      <div property="skos:definition">A write operation entails that information about resources can be created or removed. [Source]</div>
-      <a href="https://solidproject.org/TR/protocol#write-operation" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#write-operation</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">
-                      Notification Subscription API
-                    </div>
-      <div property="skos:definition">
-                      An HTTP URI at which a client can initiate a subscription to notification events
-                      for a particular set of resources [RFC7231].
-                    </div>
-      <a href="https://solidproject.org/TR/notifications-protocol#notification-subscription-api" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#notification-subscription-api</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">
-                      Notification Subscription Metadata Resource
-                    </div>
-      <div property="skos:definition">
-                      An RDF document [RDF11-CONCEPTS]
-                      that includes metadata about the capabilities of a Notification Subscription API.
-                    </div>
-      <a href="https://solidproject.org/TR/notifications-protocol#notification-subscription-metadata-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#notification-subscription-metadata-resource</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">owner</div>
-      <div property="skos:definition">An owner is a person or a social entity that is considered to have the rights and responsibilities of a data storage. An owner is identified by a URI, and implicitly has control over all data in a storage. An owner is first set at storage provisioning time and can be changed.</div>
-      <a href="https://solidproject.org/TR/protocol#owner" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#owner</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">agent</div>
-      <div property="skos:definition">An agent is a person, social entity, or software identified by a URI; e.g., a WebID denotes an agent [WEBID].</div>
-      <a href="https://solidproject.org/TR/protocol#agent" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#agent</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">agent</div>
-      <div property="skos:definition">An agent is a person, social entity or software identified by a URI, e.g., a WebID denotes an agent [WEBID].</div>
-      <a href="https://solidproject.org/TR/wac#agent" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#agent</a>
-    </div>
-  
+
     <div typeof="skos:Concept">
       <div property="skos:prefLabel">rate</div>
       <div property="skos:definition">An ISO 8601 duration value indicating the minimum amount of time to elapse between notifications sent to the client</div>
       <a href="https://solidproject.org/TR/notifications-protocol#feature-rate" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#feature-rate</a>
     </div>
-  
+
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">ACL resource</div>
-      <div property="skos:definition">An ACL resource is represented by an RDF document [RDF11-CONCEPTS] that includes Authorizations determining access to resources.</div>
-      <a href="https://solidproject.org/TR/wac#acl-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#acl-resource</a>
+      <div property="skos:prefLabel">accept</div>
+      <div property="skos:definition">A MIME-Type value that indicates the desired serialization of the notification. For instance, text/turtle may be acceptable.</div>
+      <a href="https://solidproject.org/TR/notifications-protocol#feature-accept" rel="prov:wasDerivedFrom">https://solidproject.org/TR/notifications-protocol#feature-accept</a>
     </div>
-  
+
     <div typeof="skos:Concept">
-      <div property="skos:prefLabel">origin</div>
-      <div property="skos:definition">An origin indicates where an HTTP request originates from [RFC6454].</div>
-      <a href="https://solidproject.org/TR/protocol#origin" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#origin</a>
+      <div property="skos:prefLabel">source</div>
+      <div property="skos:definition">The source property is used in the body of the subscription response. The value of this property MUST be a URI, using the wss scheme. A JavaScript client would use the entire value as input to the WebSocket constructor.</div>
+      <a href="https://solidproject.org/TR/websocket-subscription-2021#websocketsubscription2021-source" rel="prov:wasDerivedFrom">https://solidproject.org/TR/websocket-subscription-2021#websocketsubscription2021-source</a>
     </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">container resource</div>
-      <div property="skos:definition">A container resource is a hierarchical collection of resources that contains other resources, including containers.</div>
-      <a href="https://solidproject.org/TR/protocol#container-resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#container-resource</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">data pod</div>
-      <div property="skos:definition">A data pod is a place for storing documents, with mechanisms for controlling who can access what.</div>
-      <a href="https://solidproject.org/TR/protocol#data-pod" rel="prov:wasDerivedFrom">https://solidproject.org/TR/protocol#data-pod</a>
-    </div>
-  
-    <div typeof="skos:Concept">
-      <div property="skos:prefLabel">resource</div>
-      <div property="skos:definition">A resource is the target of an HTTP request identified by a URI [RFC7231].</div>
-      <a href="https://solidproject.org/TR/wac#resource" rel="prov:wasDerivedFrom">https://solidproject.org/TR/wac#resource</a>
-    </div>
-   
+ 
 <style>
     body[typeof="skos:ConceptScheme"] {
        padding-left:1em;

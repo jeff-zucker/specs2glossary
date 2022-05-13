@@ -1,0 +1,60 @@
+@prefix : <#> .
+@prefix ui: <http://www.w3.org/ns/ui#> .
+
+<#GlossaryTemplate>
+  a ui:Template ;
+  ui:before """<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+</head>
+<body typeof="skos:ConceptScheme" about="" prefix="skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# schema: http://schema.org/">                            
+
+    <h1 property="skos:prefLabel">
+        Glossary of terms defined in the Solid Specifications
+    </h1>
+
+    <p typeof="schema:description">
+        Generated from the specfications using 
+        <a rel="prov:wasDerivedFrom" href="https://github.com/jeff-zucker/specs2glossary">
+            https://github.com/jeff-zucker/specs2gloss
+        </a>
+    </p>
+""" ;
+
+ui:recurring """
+    <div typeof="skos:Concept">
+      <div property="skos:prefLabel">${term}</div>
+      <div property="skos:definition">${definition}</div>
+      <a href="${source}" rel="prov:wasDerivedFrom">${source}</a>
+    </div>
+""";
+
+ui:after """
+<style>
+    body[typeof="skos:ConceptScheme"] {
+       padding-left:1em;
+       font-family : Verdana, Helvetica, Sans-Serif;
+    }
+    div[typeof="skos:Concept"] {
+      margin-bottom:1em;
+    }
+    div[property="skos:prefLabel"] {
+      font-weight:bold;
+      font-size:100.5%;
+    }
+    div[property="skos:definition"] {
+      margin-top:0.25em;
+      padding-left:1em;
+    }
+    div[typeof="skos:Concept"] a[rel="prov:wasDerivedFrom"] {
+      display:block;
+      font-size:small;
+      padding-left:1em;
+      margin-top:0.25em;
+      margin-bottom:1em;
+    }
+  
+</style>
+</body></html>
+""" .
